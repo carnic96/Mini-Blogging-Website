@@ -1,0 +1,455 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"profi",
+				"profile_id"
+			],
+			[
+				"foll",
+				"followed_by_id"
+			],
+			[
+				"followe",
+				"followed_by_id"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"reques",
+				"Request"
+			],
+			[
+				"pos",
+				"post_id"
+			],
+			[
+				"post",
+				"post_by"
+			],
+			[
+				"us",
+				"user_id"
+			],
+			[
+				"comm",
+				"comment"
+			],
+			[
+				"check",
+				"checkLogin"
+			],
+			[
+				"fo",
+				"followers"
+			],
+			[
+				"comme",
+				"comment_id"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"first",
+				"first_name"
+			],
+			[
+				"b",
+				"border"
+			],
+			[
+				"al",
+				"align-content"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"firs",
+				"first_name"
+			],
+			[
+				"use",
+				"users"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"_",
+				"_POST"
+			],
+			[
+				"fun",
+				"fun\tfunction …"
+			],
+			[
+				"o",
+				"users_object"
+			],
+			[
+				"email",
+				"email_id"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"em",
+				"email_id"
+			],
+			[
+				"Use",
+				"Users"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "database/migrations/2014_10_12_000000_create_users_table.php",
+			"settings":
+			{
+				"buffer_size": 837,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/twitter",
+		"/C/xampp/htdocs/twitter/app",
+		"/C/xampp/htdocs/twitter/app/Http",
+		"/C/xampp/htdocs/twitter/app/Http/Controllers",
+		"/C/xampp/htdocs/twitter/app/Http/Controllers/Auth",
+		"/C/xampp/htdocs/twitter/resources",
+		"/C/xampp/htdocs/twitter/resources/views"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/twitter/app/Http/Controllers/UserController.php",
+		"/C/xampp/htdocs/twitter/resources/views/search.blade.php",
+		"/C/xampp/htdocs/tweet/.env",
+		"/C/xampp/htdocs/tweet/database/migrations/2014_10_12_100000_create_password_resets_table.php",
+		"/C/xampp/htdocs/twitter/resources/views/profile.blade.php",
+		"/C/xampp/htdocs/twitter/.env",
+		"/C/xampp/htdocs/twitter/routes/web.php",
+		"/C/xampp/htdocs/twitter/resources/views/edit_profile.blade.php",
+		"/C/xampp/htdocs/twitter/resources/views/new_post.blade.php",
+		"/C/xampp/htdocs/twitter/app/User.php",
+		"/C/xampp/htdocs/twitter/resources/views/login.blade.php",
+		"/C/xampp/htdocs/twitter/public/css/style.css",
+		"/C/xampp/htdocs/twitter/app/Post.php",
+		"/C/xampp/htdocs/twitter/resources/views/checkLogin.blade.php",
+		"/C/xampp/htdocs/twitter/app/Follower.php",
+		"/C/xampp/htdocs/twitter/app/posts.php",
+		"/C/xampp/htdocs/twitter/resources/views/new_post.php",
+		"/C/xampp/htdocs/twitter/app/edit_profile.php",
+		"/C/xampp/htdocs/twitter/resources/views/register.blade.php",
+		"/C/xampp/htdocs/twitter/app/Comment.php",
+		"/C/xampp/htdocs/twitter/app/Users.php",
+		"/C/xampp/htdocs/twitter/composer.json",
+		"/C/xampp/htdocs/twitter/app/Userd.php",
+		"/C/xampp/htdocs/twitter/app/settings.php",
+		"/C/xampp/htdocs/twitter/public/css/profile-style.css",
+		"/C/xampp/htdocs/twitter/app/Models/User_model.php",
+		"/C/xampp/htdocs/twitter/config/session.php",
+		"/C/xampp/htdocs/twitter/app/Http/Controllers/Controller.php",
+		"/C/xampp/htdocs/twitter/database/seeds/DatabaseSeeder.php",
+		"/C/xampp/htdocs/twitter/public/css/font-awesome.min.css",
+		"/C/xampp/htdocs/twitter/app/Http/Controllers/Auth/RegisterController.php",
+		"/C/xampp/htdocs/twitter/app/Http/Controllers/Auth/LoginController.php",
+		"/C/xampp/htdocs/twitter/public/js/profile.js",
+		"/C/xampp/htdocs/twitter/resources/views/welcome.blade.php",
+		"/C/xampp/htdocs/twitter/config/database.php",
+		"/C/xampp/htdocs/twitter/config/auth.php",
+		"/C/xampp/htdocs/twitter/config/app.php",
+		"/C/Users/carnic/Downloads/flat_sign_up_form/web/css/font-awesome.min.css",
+		"/C/xampp/htdocs/twitter/bootstrap/cache/services.php",
+		"/C/xampp/htdocs/twitter/bootstrap/app.php",
+		"/C/xampp/htdocs/twitter/vendor/tijsverkoyen/css-to-inline-styles/src/CssToInlineStyles.php",
+		"/C/xampp/htdocs/laravel-proj/project/app/config/database.php",
+		"/C/xampp/htdocs/laravel-proj/project/app/views/register.blade.php",
+		"/C/xampp/htdocs/laravel-proj/laravel/app/Http/Controllers/Hello.php",
+		"/C/xampp/htdocs/laravel-proj/project/app/models/User.php",
+		"/C/xampp/htdocs/laravel-proj/project/app/models/register.php",
+		"/C/xampp/htdocs/laravel-proj/project/app/routes.php",
+		"/C/xampp/htdocs/laravel-proj/project/app/controllers/HomeController.php",
+		"/C/xampp/htdocs/laravel-proj/project/app/database/seeds/DatabaseSeeder.php",
+		"/C/xampp/htdocs/laravel-proj/laravel/routes/web.php",
+		"/C/xampp/htdocs/laravel-proj/project/app/views/hello.php",
+		"/C/xampp/htdocs/laravel-proj/project/app/controllers/BaseController.php",
+		"/C/xampp/htdocs/laravel-proj/laravel/resources/views/hello.blade.php",
+		"/C/xampp/htdocs/laravel-proj/laravel/routes/console.php",
+		"/C/xampp/htdocs/laravel-proj/laravel/resources/views/welcome.blade.php",
+		"/C/xampp/htdocs/laravel-proj/proj/app/config/app.php",
+		"/C/xampp/htdocs/laravel-proj/laravel/app/User.php",
+		"/C/xampp/htdocs/laravel-proj/laravel/app/Http/Controllers/Controller.php",
+		"/C/xampp/htdocs/laravel-proj/proj/app/controllers/HomeController.php",
+		"/C/xampp/htdocs/laravel-proj/example1/project1.php",
+		"/C/xampp/htdocs/laravel-proj/laravel/vendor/laravel/framework/src/Illuminate/Notifications/RoutesNotifications.php",
+		"/C/xampp/htdocs/laravel-proj/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php",
+		"/C/xampp/htdocs/laravel-proj/laravel/app/Http/routes.php",
+		"/C/xampp/htdocs/laravel-proj/laravel/app/Providers/RouteServiceProvider.php",
+		"/C/xampp/htdocs/laravel-proj/laravel/vendor/laravel/framework/src/Illuminate/Routing/RouteSignatureParameters.php",
+		"/C/xampp/htdocs/laravel-proj/blog/resources/lang/en/auth.php",
+		"/C/xampp/htdocs/laravel-proj/laravel/app/Http/Kernel.php",
+		"/C/xampp/htdocs/laravel-proj/blog/resources/views/welcome.blade.php",
+		"/C/xampp/htdocs/laravel-proj/blog/routes/channels.php",
+		"/C/xampp/htdocs/laravel-proj/blog/tests/CreatesApplication.php",
+		"/C/xampp/htdocs/laravel-proj/blog/tests/TestCase.php",
+		"/C/xampp/htdocs/laravel-proj/blog/public/index.php",
+		"/C/xampp/htdocs/laravel-proj/blog/routes/web.php",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/xampp/htdocs/laravel-proj/laravel/.gitignore",
+		"/C/xampp/htdocs/laravel-proj/blog/storage/logs/.gitignore",
+		"/C/xampp/htdocs/laravel-proj/blog/routes/console.php",
+		"/C/xampp/htdocs/laravel-proj/blog/resources/lang/en/validation.php",
+		"/C/Users/carnic/Desktop/hosts"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"name",
+			"input",
+			"inpu",
+			"');",
+			"post",
+			"reques",
+			"users",
+			"Users",
+			"search",
+			"where",
+			"csr",
+			"toke",
+			"session",
+			"');\n",
+			"profi",
+			"$users",
+			"red",
+			"dt",
+			"dtl",
+			"id",
+			"blade",
+			"Route::get('/profile', [\n    'uses' => 'UserController@profile'\n]);",
+			"asset",
+			"form",
+			"url",
+			"font",
+			"select",
+			"js",
+			"composer",
+			"laravel"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "database/migrations/2014_10_12_000000_create_users_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 837,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								507,
+								507
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "tweet.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"web",
+				"routes\\web.php"
+			],
+			[
+				"probla",
+				"resources\\views\\profile.blade.php"
+			],
+			[
+				"usecon",
+				"app\\Http\\Controllers\\UserController.php"
+			],
+			[
+				"routes",
+				"C:\\xampp\\htdocs\\twitter\\routes\\web.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 235.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
