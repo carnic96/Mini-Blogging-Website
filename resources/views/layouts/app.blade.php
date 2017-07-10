@@ -13,7 +13,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="{{ asset('js/custom.js') }}"></script>
+    <script src="{{ asset('js/custom.js?v=1.0') }}"></script>
 </head>
 <body>
     <div id="app">

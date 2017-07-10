@@ -39,17 +39,18 @@ class HomeController extends Controller
 
         // $user = User::where('id', $user_id)->get();
         $data['user'] = Auth::user();
-
-        $followings = Follower::where('followed_by_id', $user_id);
+        $followings = Follower::where('followed_by_id', $user_id)->get();
+        //echo '<pre>'; print_r($followings);
 
         $users[] = $user_id;
         if(sizeof($followings) > 0) 
         {
             foreach($followings as $following) 
             {
-                $users[] = $following->user_id;
+                array_push($users, $following->user_id);
             }
         }
+        //dd($users);
         $posts = Post::whereIn('user_id', $users)->orderBy('id','desc')->get();
         $data['posts'] = $posts; 
         //$data['comments'] = Comment::where('post_id', ); //post id

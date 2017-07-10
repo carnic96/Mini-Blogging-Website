@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-4">
             <div class="panel panel-default">
-                <div class="panel-heading">My Profile</div>
+                <div class="panel-heading"><?php echo $dtl->first_name; ?></div>
 
                 <div class="panel-body">
                     <div class="row">
@@ -31,20 +31,25 @@
 
 
             </div>
-            <?php if($ifFollowing) {?>
-                <div class="row">
-                    <div class="col-md-4 col-offset-4"><input type="button" value="Following" /></div>
+            
+            <div class="row follow" <?php if($ifFollowing) {?> style="display: none;"<?php }?>>
+                <div class="col-md-4">
+                    <input type="button" value="Follow" id="follow" 
+                        data-user_id="<?php echo $dtl->id;?>" />
                 </div>
-            <?php }else {?>
-            <div class="row">
-                <div class="col-md-4 col-md-offset-4"><input type="button" value="Follow" /></div>
             </div>
-            <?php }?>
+       
+            <div class="row unfollow" <?php if(!$ifFollowing) {?> style="display: none;" <?php }?>>
+                <div class="col-md-4">
+                    <input type="button" value="Following" id="unfollow" 
+                        data-user_id="<?php echo $dtl->id;?>" />
+                </div>
+            </div>
         </div>
         <div class="col-md-8">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <a class="javascript:void(0)">My Profile</a>
+                    <a class="javascript:void(0)">Profile</a>
                 </div>
 
                 <div class="panel-body">
@@ -81,19 +86,41 @@
                         <div class="panel-body">
                             <span><?php echo $v->post;?></span>
                         </div>
-                        <div class="panel-footer" style="text-align: right; padding:0px 12px;">
-                            <?php  echo $v->created_at;?>
-                        </div>
-                        <div >
-                            <?php 
-                                echo "<a class='btn btn-large btn-primary'>Like 
-                                     <i class='fa fa-heart' aria-hidden='true'></i>
-                                     </a>";
-                                echo "<br><input type='text' name='term' /><br>
-                                     <input type='submit' value='Comment' /> 
-                                     </form> <br/> <br>";  
-                            ?> 
-                        </div>
+                         <?php
+                            $url = 'like';
+                            if($v->likes->where('user_id',$dtl->id)->count()>0){
+                                $url = 'unlike';
+                            }
+                            ?>
+
+                            <div class="panel-footer" style="text-align: right; padding:2px 12px;">
+                                <a href="<?php echo url('/'.$url.'/'.$v->id); ?>" class='btn btn-small btn-primary' style="padding:0 10px; float:left;">   {{ucfirst($url)}} 
+                                   <i class='fa fa-heart' aria-hidden='true'></i>
+                                </a> 
+                                <span style="float: left;padding: 0 5px;"> {{ $v->likes->count() }} likes</span>
+
+                       <?php  echo Carbon\Carbon::parse($v->created_at)->format('M d, Y');?>
+                            </div>
+
+
+                         <div style="padding:5px 12px;">
+                                
+                                <?php
+                                if (!empty($v->comments))
+                                {
+                                    foreach($v->comments as $comment)
+                                    {?>
+                                        <div class="panel-body" style="padding: 0">
+                                            <span><?php echo ucwords($v->user->first_name).' : ';?></span>
+                                            <span><?php echo $comment->comment;?></span>
+                                        </div>
+                                    <?php 
+                                    }
+                                }
+                                ?> 
+                                <textarea style="width: 100%;" name='term'></textarea><br />
+                                <input type='button' value='Comment' data-post="{{$v->id}}" class="postComment" />
+                            </div>
                     </div>
                     <?php
                     }

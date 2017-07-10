@@ -15,7 +15,7 @@ class ProfileController extends Controller
 {
     //
 
-    function index($id = '') 
+    public function index($id = '') 
     {
     	$user_id = Auth::user()->id;
     	$data['dtl'] = User::where('id', $id)->first();
@@ -43,8 +43,7 @@ class ProfileController extends Controller
 		$data['posts']	 	= Post::where('user_id', $user_id)->orderBy('id','desc')->get();
     	$data['followers'] 	= Follower::where(['user_id' => $user_id])->count();
     	$data['following'] 	= Follower::where(['followed_by_id' => $user_id])->count();
-    	$data['settings'] 	= Setting::where('user_id', $user_id)->get();
-
+    	$data['settings'] 	= Setting::where('user_id', $user_id)->first();
 
     	return view('profile', $data);
     }
@@ -128,4 +127,24 @@ class ProfileController extends Controller
    		//echo 'asd';
 		return "saved";
    	}
+
+   	public function follow($userId)
+   	{
+   		$user_id = Auth::user()->id;
+
+   		Follower::insert(['user_id' => $userId, 'followed_by_id' => $user_id]);
+   		return;
+   		//return redirect('/otherprofile');
+   		//return index($userId);
+   	}
+
+   	public function unfollow($userId)
+    {
+		$user_id = Auth::user()->id;
+		$follower = Follower::where('user_id',$userId)->where('followed_by_id', $user_id)->first();
+	    Follower::destroy($follower->id);
+	    return;
+	    //return redirect('/otherprofile');
+	    //return index($userId);
+    }
 }

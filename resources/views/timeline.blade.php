@@ -9,7 +9,7 @@
                     You are logged in!
                 </div>    
                 <div class="panel-heading">
-                    <a href="<?php url('/timeline') ?>">
+                    <a href="<?php echo url('/profile') ?>">
                         <?php echo $user->first_name; ?>
                     </a>
                 </div>
@@ -59,33 +59,38 @@
                             <div class="panel-body">
                                 <span><?php echo $v->post;?></span>
                             </div>
-                            <div class="panel-footer" style="text-align: right; padding:0px 12px;">
-                                <a class='btn btn-small btn-primary' style="padding:0 10px; float:left;">   Like 
+                            
+                            <?php
+                            $url = 'like';
+                            if($v->likes->where('user_id',$user->id)->count()>0){
+                                $url = 'unlike';
+                            }
+                            ?>
+
+                            <div class="panel-footer" style="text-align: right; padding:2px 12px;">
+                                <a href="<?php echo url('/'.$url.'/'.$v->id); ?>" class='btn btn-small btn-primary' style="padding:0 10px; float:left;">   {{ucfirst($url)}} 
                                    <i class='fa fa-heart' aria-hidden='true'></i>
-                                </a>
+                                </a> 
+                                <span style="float: left;padding: 0 5px;"> {{ $v->likes->count() }} likes</span>
                                 <?php  echo Carbon\Carbon::parse($v->created_at)->format('M d, Y');?>
                             </div>
-                            <div >
+                            <div style="padding:5px 12px;">
                                 
                                 <?php
-                                if (!empty($comments))
+                                if (!empty($v->comments))
                                 {
-                                    foreach($comments as $k => $v)
+                                    foreach($v->comments as $comment)
                                     {?>
-                                        <div class="panel-heading">
-                                            <?php echo 'By ' . ucwords($v->user->first_name . ' ' . $v->user->last_name);?>
-                                        </div>
-                                        <div class="panel-body">
-                                            <span><?php echo $v->comment;?></span>
+                                        <div class="panel-body" style="padding: 0">
+                                            <span><?php echo ucwords($v->user->first_name).' : ';?></span>
+                                            <span><?php echo $comment->comment;?></span>
                                         </div>
                                     <?php 
                                     }
                                 }
                                 ?> 
-                                <br />
-
                                 <textarea style="width: 100%;" name='term'></textarea><br />
-                                <input type='button' value='Comment' /> 
+                                <input type='button' value='Comment' data-post="{{$v->id}}" class="postComment" />
                             </div>
                         </div>
                     <?php
